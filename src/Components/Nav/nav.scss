@@ -1,0 +1,17 @@
+.nav {
+  &__item {
+    margin-bottom: 12px;
+    
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+.is-active {
+  text-decoration: underline;
+}

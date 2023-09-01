@@ -1,0 +1,29 @@
+.homeLoaderSpinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 400px;
+  width: 100%;
+  margin: 0 100px;
+}
+
+.loader__custom {
+  height: 100px;
+  width: 100px;
+
+  border-radius: 50%;
+  border: 7px dotted $cBlueAccent;
+  border-right-color: transparent;
+  
+  animation: spinAround 1700ms infinite linear;
+}
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

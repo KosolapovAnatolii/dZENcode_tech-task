@@ -1,0 +1,19 @@
+.products {
+  padding: 22px;
+  overflow-x: auto;
+
+  &__head {
+    margin-bottom: 22px;
+    gap: 16px;
+  }
+
+  &__filter--label {
+    color: $smallTextColor;
+    margin-right: 8px;
+  }
+
+  &__filter--select {
+    min-width: 200px;
+    margin-right: 8px;
+  }
+}

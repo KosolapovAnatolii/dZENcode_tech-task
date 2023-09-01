@@ -1,0 +1,12 @@
+.ordered-product {
+  padding: 8px;
+
+  &__image {
+    width: 50px;
+  }
+
+  &__title {
+    font-size: 22px;
+    text-decoration: underline;
+  }
+}

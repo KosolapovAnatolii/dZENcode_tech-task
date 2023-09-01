@@ -1,0 +1,59 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 0;
+  max-width: 60%;
+  max-height: 300px;
+
+  background-color: #fff;
+
+  &__footer {
+    width: 100%;
+    padding: 18px;
+
+    background-color: $buttonBackground;
+  }
+
+  &__footer--button {
+    border: 0;
+    border-radius: 16px;
+    padding: 6px;
+
+    background-color: $buttonBackground;
+    color: #fff;
+
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    &:hover {
+      background-color: #fff;
+      color: $buttonBackground;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.7);
+}

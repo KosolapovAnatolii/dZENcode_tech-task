@@ -1,0 +1,26 @@
+.side-bar {
+  padding: 20px;
+  height: 100vh;
+
+  &__photo {
+    position: relative;
+  }
+
+  &__settings {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+
+    background-color: #fff;
+  }
+
+  &__gear {
+    height: 15px;
+    width: 15px;
+  }
+}

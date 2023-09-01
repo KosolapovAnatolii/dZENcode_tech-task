@@ -1,0 +1,25 @@
+.products-item {
+  border: 1px solid #ced7dc;
+  padding: 0 4px;
+  margin-bottom: 8px;
+  height: 100px;
+
+  background-color: #fff;
+
+  &__image {
+    width: 75px;
+  }
+
+  &__delete {
+    width: 25px;
+  }
+}
+
+.small-str {
+  font-size: 14px;
+  color: $smallTextColor;
+}
+
+.big-str {
+  font-size: 16px;
+}

@@ -1,0 +1,45 @@
+.orders-item {
+  border: 1px solid #000;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 4px 8px;
+
+  color: $smallTextColor;
+
+  &__link {
+    border: 1px solid $smallTextColor;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+  }
+
+  &__img {
+    height: 25px;
+    width: 25px;
+  }
+
+  &__arrow {
+    width: 25px;
+
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &__delete {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+.small-str {
+  font-size: 14px;
+}
+
+.big-str {
+  font-size: 18px;
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: all;
+}

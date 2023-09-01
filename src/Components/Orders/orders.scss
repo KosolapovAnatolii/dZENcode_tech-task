@@ -1,0 +1,33 @@
+.orders {
+  padding: 22px;
+  
+  &__head {
+    margin-bottom: 22px;
+    gap: 8px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+        
+    font-size: 26px;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 0fr; 
+    gap: 10px;
+    
+    transition: grid-template-columns 0.8s ease;
+  }
+}
+
+.open {
+  grid-template-columns: 1fr 2fr; 
+}
