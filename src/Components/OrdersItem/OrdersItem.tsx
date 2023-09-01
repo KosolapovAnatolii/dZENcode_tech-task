@@ -8,7 +8,7 @@ import { useAppDispatch, useAppSelector } from '../../store/hooks';
 import { orderSlice } from '../../store/reducers/OrderSlice';
 import { prepeadOrderDate } from '../../utils/dateFormaters';
 import { getSum } from '../../utils/getSum';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import { OrderedProduct } from '../OrderedProduct';
 
 Modal.setAppElement('#root');
@@ -34,26 +34,22 @@ export const OrdersItem: React.FC<Props> = ({
   } = order;
   const isCurrentOrder = id === isShow;
 
-  const openModal = (
-    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-  ) => {
+  const openModal = useCallback((event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     event.preventDefault();
     setIsModalOpen(true);
-  };
+  }, []);
 
-  const closeModal = () => setIsModalOpen(false);
+  const closeModal = useCallback(() => setIsModalOpen(false), []);
 
-  const handleShow = (
-    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+  const handleShow = useCallback((event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     event.preventDefault();
     setIsShow(id);
-  };
-
-  const handleUnShow = (
-    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+  }, [id]);
+  
+  const handleUnShow = useCallback((event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     event.preventDefault();
     setIsShow(null);
-  };
+  }, []);
 
   const {
     products: visibleProducts

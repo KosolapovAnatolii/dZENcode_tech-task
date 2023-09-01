@@ -1,5 +1,4 @@
 import logo from '../../images/logo.jpeg';
-// import './logo.scss';
 
 export const Logo = () => {
   return (
