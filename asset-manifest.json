@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/dZENcode_tech-task/static/css/main.2faff573.css",
+    "main.js": "/dZENcode_tech-task/static/js/main.f9ddaa7a.js",
+    "static/media/icon-gear.svg": "/dZENcode_tech-task/static/media/icon-gear.b025f2dd6454f62eedb36502ff98e839.svg",
+    "static/media/icon-list.svg": "/dZENcode_tech-task/static/media/icon-list.daca2846b08115352723fcc488c41244.svg",
+    "index.html": "/dZENcode_tech-task/index.html",
+    "static/media/icon-trash.svg": "/dZENcode_tech-task/static/media/icon-trash.940f2754b6cc078901bdf1f87308209e.svg",
+    "static/media/icon-clock.svg": "/dZENcode_tech-task/static/media/icon-clock.c2bae2cea6ba97833efe7b0cb59b8348.svg",
+    "static/media/icon-arrow.svg": "/dZENcode_tech-task/static/media/icon-arrow.2db3027901dcfeea0ac1af37c0fa2470.svg",
+    "main.2faff573.css.map": "/dZENcode_tech-task/static/css/main.2faff573.css.map",
+    "main.f9ddaa7a.js.map": "/dZENcode_tech-task/static/js/main.f9ddaa7a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2faff573.css",
+    "static/js/main.f9ddaa7a.js"
+  ]
+}
