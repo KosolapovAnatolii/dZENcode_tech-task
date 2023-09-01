@@ -16,17 +16,17 @@ export const TopMenu = () => {
   });
   const [activeSessions, setActiveSessions] = useState(0);
 
-  // useEffect(() => {
-  //   const socket = io('http://localhost:5500'); 
+  useEffect(() => {
+    const socket = io('http://localhost:5500'); 
 
-  //   socket.on('activeSessionsCount', (count: number) => {
-  //     setActiveSessions(count);
-  //   });
+    socket.on('activeSessionsCount', (count: number) => {
+      setActiveSessions(count);
+    });
 
-  //   return () => {
-  //     socket.disconnect();
-  //   };
-  // }, []);
+    return () => {
+      socket.disconnect();
+    };
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
