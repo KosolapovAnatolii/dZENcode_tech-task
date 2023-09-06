@@ -31,6 +31,14 @@ export const orderSlice = createSlice({
     },
     removeOrder(state, action: PayloadAction<number>) {
       state.orders = state.orders.filter(order => order.id !== action.payload);
+    },
+    removeProductFromOrder(state, action: PayloadAction<number>) {
+      state.orders = state.orders.map(order => {
+        return {
+          ...order,
+          products: order.products.filter(productId => productId !== action.payload)
+        };
+      });
     }
   }
 });

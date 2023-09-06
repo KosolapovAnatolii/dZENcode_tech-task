@@ -6,6 +6,7 @@ interface Props {
 
 export const OrderedProduct: React.FC<Props> = ({ product }) => {
   const { photo, title } = product;
+  
   return (
     <div className="ordered-product d-flex justify-content-center align-items-center gap-3">
       <img

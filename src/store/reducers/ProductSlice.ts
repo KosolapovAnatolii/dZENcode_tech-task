@@ -30,7 +30,7 @@ export const productSlice = createSlice({
       state.error = action.payload;
     },
     removeProduct(state, action: PayloadAction<number>) {
-      state.products = state.products.filter(order => order.id !== action.payload);
+      state.products = state.products.filter(product => product.id !== action.payload);
     }
   }
 });

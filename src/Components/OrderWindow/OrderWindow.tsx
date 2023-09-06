@@ -19,7 +19,7 @@ export const OrderWindow: React.FC<Props> = ({ isShow }) => {
       <div className="order-window__container">
         {productsInOrder.map(product => {
           return (
-            <ProductInOrder product={product} />
+            <ProductInOrder key={product.id} product={product} />
           )
         })}
       </div>

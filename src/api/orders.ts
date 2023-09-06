@@ -3,7 +3,7 @@ import { Order } from "../Types/Order"
 export const orders: Order[] = [
   {
     id: 1,
-    title: 'Order 1 Computers',
+    title: 'Order 1 Screens',
     date: '2017-06-29 12:09:33',
     description: 'desc',
     products: [1, 4]

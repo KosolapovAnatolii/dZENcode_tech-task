@@ -1,6 +1,7 @@
 import { Product } from '../../Types/Product';
 import trash from '../../images/icon-trash.svg';
 import { useAppDispatch } from '../../store/hooks';
+import { orderSlice } from '../../store/reducers/OrderSlice';
 import { productSlice } from '../../store/reducers/ProductSlice';
 
 interface Props {
@@ -21,6 +22,8 @@ export const ProductInOrder: React.FC<Props> = ({ product }) => {
   const handleDelete = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     event.preventDefault();
     dispatch(productSlice.actions.removeProduct(id));
+    dispatch(orderSlice.actions.removeProductFromOrder(id));
+
   };
   
   return (
