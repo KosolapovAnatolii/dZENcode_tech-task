@@ -112,7 +112,7 @@ export const ProductItem: React.FC<Props> = ({ product }) => {
         overlayClassName="overlay"
       >
         <div className="modal__head">
-          <h2 className="modal__head--title">Вы уверены что хотите удалить этот приход?</h2>
+          <h2 className="modal__head--title">Вы уверены что хотите удалить этот продукт?</h2>
           <hr />
         </div>
 
